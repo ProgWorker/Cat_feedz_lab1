@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     Calendar calendar;
     SimpleDateFormat dateFormat;
     String date;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             satiety++;
 
         });
-        a2 = findViewById(R.id.vk);
+        a2 = findViewById(R.id.share);
         a2.setOnClickListener(view -> {
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
